@@ -212,7 +212,7 @@ open class FRadioPlayer: NSObject {
     // MARK: - Private properties
     
     /// AVPlayer
-    private var player: AVPlayer?
+    public var player: AVPlayer?
     
     /// Last player item
     private var lastPlayerItem: AVPlayerItem?
@@ -235,7 +235,7 @@ open class FRadioPlayer: NSObject {
     
     // MARK: - Initialization
     
-    private override init() {
+    override public init() {
         super.init()
 
         #if !os(macOS)
