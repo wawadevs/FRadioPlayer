@@ -417,10 +417,10 @@ open class FRadioPlayer: NSObject {
                 var error: NSError?
 
                 let keyStatus = asset.statusOfValue(forKey: "playable", error: &error)
-                if keyStatus == AVKeyValueStatus.failed || !asset.isPlayable {
-                    completionHandler(false, nil)
-                    return
-                }
+                // if keyStatus == AVKeyValueStatus.failed || !asset.isPlayable {
+                //    completionHandler(false, nil)
+                //    return
+                // }
 
                 completionHandler(true, asset)
             }
